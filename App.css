@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:bisque;
+    color: #333;
+}
+
+.App, section, #product-management {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: seashell;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+.vertical-form input {
+    width: 100%;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: skyblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:violet;
+}
+
+.vertical-form button, #product-form button {
+    background-color:skyblue
+}
+
+.vertical-form button:hover, #product-form button:hover {
+    background-color:violet;
+}
+
+ul li button, #product-list button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #dc3545;
+}
+
+ul li button:hover, #product-list button:hover {
+    background-color: #c82333;
+}
+
+/* Lists */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li.no-users {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}
+
+/* Containers */
+
+.container, .product-list, .user-list, .chart-container {
+    padding: 20px;
+    background-color:darkgray;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product List Table */
+
+#product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#product-list th, #product-list td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#product-list th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+#product-list td {
+    color: #333;
+}
+/* Center Navigation Buttons in Dashboard with Spacing */
+.dashboard-container .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adjust gap as needed for desired spacing */
+}
+
+/* Apply this class to each button container */
+.dashboard-container .button-group button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color:lightblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-container .button-group button:hover {
+    background-color:violet;
+}
